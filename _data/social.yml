@@ -1,1 +1,49 @@
+- platform: github
+  url: https://github.com/my-dev
+  username: my-dev
+  icon: bi-github
 
+- platform: linkedin
+  url: https://linkedin.com/in/yourlinkedinprofile
+  username: yourlinkedinprofile
+  icon: bi-linkedin
+
+- platform: twitter
+  url: https://twitter.com/yourtwitterhandle
+  username: yourtwitterhandle
+  icon: bi-twitter
+
+- platform: envelope
+  url: mailto:your.email@example.com
+  username: your.email@example.com
+  icon: bi-envelope
+
+- platform: instagram
+  url: https://instagram.com/yourinstagram
+  username: yourinstagram
+  icon: bi-instagram
+
+- platform: facebook
+  url: https://facebook.com/yourfacebook
+  username: yourfacebook
+  icon: bi-facebook
+
+- platform: youtube
+  url: https://youtube.com/c/yourchannel
+  username: yourchannel
+  icon: bi-youtube
+
+- platform: dribbble
+  url: https://dribbble.com/yourdribbble
+  username: yourdribbble
+  icon: bi-dribbble
+
+- platform: behance
+  url: https://behance.net/yourbehance
+  username: yourbehance
+  icon: bi-behance
+
+- platform: stackoverflow
+  url: https://stackoverflow.com/users/youruserid
+  username: yourusername
+  icon: bi-stack-overflow
