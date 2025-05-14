@@ -1,1 +1,15 @@
+- title: Web Design
+  icon: bi-palette
+  description: Creating beautiful, user-friendly designs that engage and convert visitors.
 
+- title: Web Development
+  icon: bi-code-square
+  description: Building robust, scalable web applications with modern technologies.
+
+- title: Mobile Development
+  icon: bi-phone
+  description: Developing responsive mobile applications for iOS and Android platforms.
+
+- title: SEO & Marketing
+  icon: bi-bar-chart
+  description: Optimizing your digital presence to reach more customers effectively.
