@@ -6,8 +6,8 @@
                 <h4 class="mb-3">About Me</h4>
                 <p>{{ site.author.bio | truncate: 150 }}</p>
                 <div class="social-links mt-3">
-                    {% for link in site.social %}
-                    <a href="{{ link[1] }}" target="_blank" class="text-white me-3"><i class="bi bi-{{ link[0] }}"></i></a>
+                    {% for social in site.data.social %}
+                    <a href="{{ social.url }}" target="_blank" class="text-white me-3"><i class="bi {{ social.icon }}"></i></a>
                     {% endfor %}
                 </div>
             </div>
