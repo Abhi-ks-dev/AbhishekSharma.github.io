@@ -1,1 +1,29 @@
+degrees:
+  - degree: Bachelor of Science in Computer Science
+    school: University of California, Berkeley
+    period: 2016 - 2020
+    details: GPA 3.8/4.0
+    description: Focused on software engineering, algorithms, and machine learning. Dean's List for 4 semesters.
+  
+  - degree: High School Diploma
+    school: San Francisco High School
+    period: 2012 - 2016
+    details: Valedictorian
+    description: President of Computer Science Club, National Honor Society member.
 
+certifications:
+  - title: AWS Certified Solutions Architect
+    issuer: Amazon Web Services
+    year: 2023
+  
+  - title: Google Cloud Professional Developer
+    issuer: Google Cloud Platform
+    year: 2022
+  
+  - title: MongoDB Certified Developer
+    issuer: MongoDB University
+    year: 2021
+  
+  - title: React Developer Certification
+    issuer: Meta
+    year: 2021
