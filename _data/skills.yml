@@ -1,1 +1,38 @@
+- name: Frontend Development
+  icon: bi-code-slash
+  skills:
+    - React
+    - Vue.js
+    - Angular
+    - TypeScript
+    - Bootstrap
+    - Tailwind CSS
+    - HTML5
+    - CSS3
+    - JavaScript ES6+
 
+- name: Backend Development
+  icon: bi-server
+  skills:
+    - Node.js
+    - Express
+    - Python
+    - Django
+    - RESTful APIs
+    - GraphQL
+    - PostgreSQL
+    - MongoDB
+    - Redis
+
+- name: Tools & DevOps
+  icon: bi-gear
+  skills:
+    - Git
+    - Docker
+    - Kubernetes
+    - AWS
+    - CI/CD
+    - Jenkins
+    - Linux
+    - Webpack
+    - Agile/Scrum
