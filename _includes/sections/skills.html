@@ -1,1 +1,18 @@
-
+<!-- Skills Section -->
+<section id="skills" class="bg-light">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <p class="section-subtitle">Technologies I work with</p>
+        <div class="row g-4">
+            {% for skill in site.data.skills %}
+            <div class="col-md-4">
+                <div class="skill-card">
+                    <i class="bi {{ skill.icon }}"></i>
+                    <h4>{{ skill.name }}</h4>
+                    <p>{{ skill.skills | join: ", " }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
