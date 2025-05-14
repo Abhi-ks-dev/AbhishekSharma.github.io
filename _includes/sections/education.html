@@ -1,1 +1,39 @@
-
+<!-- Education Section -->
+<section id="education">
+    <div class="container">
+        <h2 class="section-title">Education & Certifications</h2>
+        <p class="section-subtitle">My academic journey and professional certifications</p>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3 class="mb-4">Education</h3>
+                {% for edu in site.data.education.degrees %}
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="education-content">
+                        <h4>{{ edu.degree }}</h4>
+                        <h5>{{ edu.school }}</h5>
+                        <p class="text-muted">{{ edu.period }} | {{ edu.details }}</p>
+                        <p>{{ edu.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4">Certifications</h3>
+                {% for cert in site.data.education.certifications %}
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="bi bi-award"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h4>{{ cert.title }}</h4>
+                        <p class="text-muted">{{ cert.issuer }} | {{ cert.year }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
