@@ -1,1 +1,51 @@
+---
+layout: default
+---
 
+<section class="bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <article>
+                    <header class="mb-5 text-center">
+                        <h1 class="display-4">{{ page.title }}</h1>
+                        <div class="text-muted">
+                            <span><i class="bi bi-calendar"></i> {{ page.date | date: "%B %-d, %Y" }}</span>
+                            <span class="mx-2">•</span>
+                            <span><i class="bi bi-clock"></i> {{ page.read_time | default: 5 }} min read</span>
+                            <span class="mx-2">•</span>
+                            <span>{{ page.category }}</span>
+                        </div>
+                    </header>
+                    
+                    {% if page.image %}
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded mb-5">
+                    {% endif %}
+                    
+                    <div class="prose">
+                        {{ content }}
+                    </div>
+                    
+                    <footer class="mt-5 pt-5 border-top">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h5>Share this post</h5>
+                                <div class="social-share">
+                                    <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}&text={{ page.title }}" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="bi bi-twitter"></i> Twitter
+                                    </a>
+                                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url }}" class="btn btn-sm btn-outline-primary" target="_blank">
+                                        <i class="bi bi-linkedin"></i> LinkedIn
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-md-end">
+                                <a href="/blog" class="btn btn-primary">← Back to Blog</a>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
