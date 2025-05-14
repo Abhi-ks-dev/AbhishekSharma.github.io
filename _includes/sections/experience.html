@@ -1,1 +1,20 @@
-
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">My professional journey</p>
+        <div class="timeline">
+            {% for experience in site.data.experience %}
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h4>{{ experience.title }}</h4>
+                    <h5 class="text-primary">{{ experience.company }}</h5>
+                    <p>{{ experience.description }}</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">{{ experience.period }}</div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
