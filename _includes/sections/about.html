@@ -1,1 +1,53 @@
-
+<!-- About Section -->
+<section id="about" class="bg-light">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Get to know me better</p>
+        <div class="row align-items-center">
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="{{ '/assets/images/about.jpg' | relative_url }}" alt="About" class="img-fluid about-img">
+            </div>
+            <div class="col-lg-8">
+                <div class="about-content">
+                    <h3>Hi, I'm {{ site.author.name }}</h3>
+                    <p class="lead mb-4">{{ site.author.bio }}</p>
+                    <p>With over {{ site.author.experience }} of experience in web development, I specialize in building modern, responsive applications using cutting-edge technologies. My journey in tech began with a curiosity about how things work, and has evolved into a career focused on solving complex problems and creating innovative solutions.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <ul class="about-list">
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Location:</strong> {{ site.author.location }}
+                                </li>
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Email:</strong> {{ site.author.email }}
+                                </li>
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Phone:</strong> {{ site.author.phone }}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="about-list">
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Degree:</strong> {{ site.author.degree }}
+                                </li>
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Experience:</strong> {{ site.author.experience }}
+                                </li>
+                                <li>
+                                    <i class="bi bi-chevron-right"></i>
+                                    <strong>Freelance:</strong> {{ site.author.freelance }}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
