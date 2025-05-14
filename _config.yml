@@ -1,10 +1,12 @@
-
 ---
 # Jekyll Configuration
 title: Your Name - Portfolio
 description: Full Stack Developer | Creative Designer
-url: "https://yourusername.github.io"
-baseurl: ""
+url: "" # Leave empty for GitHub Pages
+baseurl: "" # Leave empty if using username.github.io, otherwise "/repository-name"
+
+# For GitHub Pages
+github: [metadata]
 
 # Author/Contact Information
 author:
@@ -32,33 +34,18 @@ collections:
 
 # Build settings
 markdown: kramdown
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Sass configuration
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Exclude files from build
+# Exclude from processing
 exclude:
   - Gemfile
   - Gemfile.lock
-  - README.md
-  - LICENSE
-
-# Default values
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Your Name"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
