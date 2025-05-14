@@ -1,1 +1,25 @@
-
+<!-- Testimonials Section -->
+<section id="testimonials" class="bg-light">
+    <div class="container">
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-subtitle">What clients say about my work</p>
+        <div class="row g-4">
+            {% for testimonial in site.data.testimonials %}
+            <div class="col-md-4">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"{{ testimonial.text }}"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="{{ testimonial.avatar | default: '/assets/images/avatar-placeholder.jpg' | relative_url }}" alt="{{ testimonial.name }}" class="testimonial-avatar">
+                        <div>
+                            <h5>{{ testimonial.name }}</h5>
+                            <p class="text-muted">{{ testimonial.position }}, {{ testimonial.company }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
