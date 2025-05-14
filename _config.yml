@@ -2,8 +2,8 @@
 # Jekyll Configuration
 title: Your Name - Portfolio
 description: Full Stack Developer | Creative Designer
-url: "" # Leave empty for GitHub Pages
-baseurl: "" # Leave empty if using username.github.io, otherwise "/repository-name"
+url: "https://Abhi-ks-dev.github.io" # Leave empty for GitHub Pages
+baseurl: "/AbhishekSharma.github.io" # Leave empty if using username.github.io, otherwise "/repository-name"
 
 # For GitHub Pages
 github: [metadata]
