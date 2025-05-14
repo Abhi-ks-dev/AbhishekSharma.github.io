@@ -1,1 +1,31 @@
-
+<!-- Blog Section -->
+<section id="blog">
+    <div class="container">
+        <h2 class="section-title">Latest Blog Posts</h2>
+        <p class="section-subtitle">Thoughts and insights on technology</p>
+        <div class="row g-4">
+            {% for post in site.posts limit:3 %}
+            <div class="col-md-4">
+                <div class="blog-card">
+                    <img src="{{ post.image | default: '/assets/images/blog/default.jpg' }}" alt="{{ post.title }}" class="blog-img">
+                    <div class="blog-content">
+                        <span class="blog-category">{{ post.category }}</span>
+                        <h4>{{ post.title }}</h4>
+                        <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+                        <div class="blog-meta">
+                            <span><i class="bi bi-calendar"></i> {{ post.date | date: "%b %-d, %Y" }}</span>
+                            <span><i class="bi bi-clock"></i> {{ post.read_time | default: 5 }} min read</span>
+                        </div>
+                        <a href="{{ post.url | relative_url }}" class="blog-link">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if site.posts.size > 3 %}
+        <div class="text-center mt-5">
+            <a href="/blog" class="btn btn-primary">View All Posts</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
