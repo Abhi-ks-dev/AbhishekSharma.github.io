@@ -1,1 +1,17 @@
+- name: John Smith
+  position: CEO
+  company: Tech Startup
+  text: Working with Your Name was an absolute pleasure. Their attention to detail and technical expertise helped us launch our product ahead of schedule.
+  avatar: /assets/images/testimonials/client1.jpg
 
+- name: Sarah Johnson
+  position: Product Manager
+  company: E-commerce Co.
+  text: Exceptional developer who goes above and beyond. They transformed our outdated system into a modern, efficient platform.
+  avatar: /assets/images/testimonials/client2.jpg
+
+- name: Mike Wilson
+  position: CTO
+  company: Finance Platform
+  text: Highly skilled professional who delivered exactly what we needed. Great communication throughout the project.
+  avatar: /assets/images/testimonials/client3.jpg
