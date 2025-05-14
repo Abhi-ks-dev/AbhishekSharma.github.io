@@ -1,1 +1,53 @@
+---
+layout: default
+---
 
+<section class="bg-light py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <article>
+                    <header class="mb-5 text-center">
+                        <h1 class="display-4">{{ page.title }}</h1>
+                        <div class="text-muted mb-3">
+                            <span>{{ page.category }}</span>
+                            <span class="mx-2">•</span>
+                            <span>{{ page.date | date: "%B %Y" }}</span>
+                        </div>
+                        <div class="project-tech mb-4">
+                            {% for tech in page.technologies %}
+                            <span class="project-tech">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                    </header>
+                    
+                    {% if page.image %}
+                    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded mb-5">
+                    {% endif %}
+                    
+                    <div class="prose">
+                        {{ content }}
+                    </div>
+                    
+                    <footer class="mt-5 pt-5 border-top">
+                        <div class="text-center">
+                            {% if page.demo_url %}
+                            <a href="{{ page.demo_url }}" class="btn btn-primary me-2" target="_blank">
+                                <i class="bi bi-eye"></i> Live Demo
+                            </a>
+                            {% endif %}
+                            {% if page.github_url %}
+                            <a href="{{ page.github_url }}" class="btn btn-outline-primary" target="_blank">
+                                <i class="bi bi-github"></i> View on GitHub
+                            </a>
+                            {% endif %}
+                        </div>
+                        <div class="mt-4">
+                            <a href="/projects" class="btn btn-secondary">← Back to Projects</a>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
