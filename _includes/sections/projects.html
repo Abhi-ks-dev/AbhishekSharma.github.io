@@ -1,1 +1,43 @@
-
+<!-- Projects Section -->
+<section id="projects" class="bg-light">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Recent work I'm proud of</p>
+        <div class="row g-4">
+            {% assign featured_projects = site.projects | where: "featured", true | sort: "date" | reverse %}
+            {% for project in featured_projects limit:6 %}
+            <div class="col-md-4">
+                <div class="card project-card">
+                    <img src="{{ project.image | default: '/assets/images/placeholder.jpg' }}" class="card-img-top" alt="{{ project.title }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.excerpt | default: project.content | strip_html | truncate: 150 }}</p>
+                        <div class="mb-3">
+                            {% for tech in project.technologies %}
+                            <span class="project-tech">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="d-flex gap-2">
+                            {% if project.demo_url %}
+                            <a href="{{ project.demo_url }}" class="btn btn-primary btn-sm" target="_blank">
+                                <i class="bi bi-eye"></i> Live Demo
+                            </a>
+                            {% endif %}
+                            {% if project.github_url %}
+                            <a href="{{ project.github_url }}" class="btn btn-outline-primary btn-sm" target="_blank">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if site.projects.size > 6 %}
+        <div class="text-center mt-5">
+            <a href="/projects" class="btn btn-primary">View All Projects</a>
+        </div>
+        {% endif %}
+    </div>
+</section>
