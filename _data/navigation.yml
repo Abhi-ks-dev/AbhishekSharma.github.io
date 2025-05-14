@@ -1,1 +1,18 @@
-
+- title: Home
+  url: "#home"
+- title: About
+  url: "#about"
+- title: Experience
+  url: "#experience"
+- title: Skills
+  url: "#skills"
+- title: Services
+  url: "#services"
+- title: Projects
+  url: "#projects"
+- title: Education
+  url: "#education"
+- title: Blog
+  url: "#blog"
+- title: Contact
+  url: "#contact"
