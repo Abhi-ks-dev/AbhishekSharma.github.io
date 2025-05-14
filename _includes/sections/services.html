@@ -1,1 +1,20 @@
-
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-subtitle">What I can do for you</p>
+        <div class="row g-4">
+            {% for service in site.data.services %}
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center">
+                    <div class="service-icon">
+                        <i class="bi {{ service.icon }}"></i>
+                    </div>
+                    <h4>{{ service.title }}</h4>
+                    <p>{{ service.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
