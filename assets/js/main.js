@@ -110,3 +110,43 @@ if (downloadBtn) {
         alert('CV download functionality to be implemented. You can link to your actual CV file here.');
     });
 }
+
+// 3D Tilt Effect with Mouse Movement
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutImg = document.querySelector('.about-img-3d');
+    
+    if (aboutImg) {
+        aboutImg.addEventListener('mousemove', function(e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        });
+        
+        aboutImg.addEventListener('mouseleave', function() {
+            this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        });
+    }
+    
+    // Parallax Effect for About Image
+    const parallaxImg = document.querySelector('.about-img-parallax');
+    
+    if (parallaxImg) {
+        window.addEventListener('mousemove', function(e) {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            const moveX = (x - 0.5) * 20;
+            const moveY = (y - 0.5) * 20;
+            
+            parallaxImg.style.transform = `translateX(${moveX}px) translateY(${moveY}px)`;
+        });
+    }
+});
