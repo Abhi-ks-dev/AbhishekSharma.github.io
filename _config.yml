@@ -1,7 +1,7 @@
 ---
 # Jekyll Configuration
-title: Your Name - Portfolio
-description: Full Stack Developer | Creative Designer
+title: Abhi S - Portfolio
+description: Identity & Access Management | Zero Trust | Cloud Security | Automation Engineer
 url: "https://Abhi-ks-dev.github.io" # Leave empty for GitHub Pages
 baseurl: "/AbhishekSharma.github.io" # Leave empty if using username.github.io, otherwise "/repository-name"
 
@@ -11,13 +11,13 @@ github: [metadata]
 # Author/Contact Information
 author:
   name: Your Name
-  email: your.email@example.com
+  email: abhi.ks@gmail.com
   phone: "+1 (555) 123-4567"
-  location: San Francisco, CA
+  location: Indianapolis, IN
   degree: B.S. Computer Science
-  experience: 5+ Years
-  freelance: Available
-  bio: A passionate full stack developer with a keen eye for design and a love for creating seamless user experiences.
+  experience: 15+ Years
+  #freelance: Available
+  bio: Experienced Identity and Access Management engineer focused on designing secure, scalable, and compliant IAM strategies.
 
 # Social Media
 social:
